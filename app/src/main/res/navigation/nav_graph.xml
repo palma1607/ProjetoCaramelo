@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuFragment">
+
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="br.com.unicuritiba.projetocaramelo.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_MenuFragment_to_AnamnesisFragment"
+            app:destination="@id/AnamnesisFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_VaccineFragment"
+            app:destination="@id/VaccineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AnamnesisFragment"
+        android:name="br.com.unicuritiba.projetocaramelo.AnamnesisFragment"
+        android:label="Anamnese"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_AnamnesisFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/VaccineFragment"
+        android:name="br.com.unicuritiba.projetocaramelo.VaccineFragment"
+        android:label="Vacinas"
+        tools:layout="@layout/fragment_vaccine" />
+</navigation>
