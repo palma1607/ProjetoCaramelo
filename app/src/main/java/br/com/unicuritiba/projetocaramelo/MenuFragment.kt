@@ -35,6 +35,10 @@ class MenuFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_MenuFragment_to_AnamnesisFragment)
         }
+
+        binding.buttonVaccine.setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_VaccineFragment)
+        }
     }
 
     override fun onDestroyView() {
