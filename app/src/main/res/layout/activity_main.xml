@@ -14,8 +14,9 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:layout_height="match_parent"
+            android:background="#FF9100"
+            android:minHeight="56dp"
             app:popupTheme="@style/Theme.ProjetoCaramelo.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>

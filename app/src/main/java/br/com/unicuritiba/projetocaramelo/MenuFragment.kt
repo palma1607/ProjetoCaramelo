@@ -32,12 +32,16 @@ class MenuFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
+        binding.buttonAnamnase.setOnClickListener {
             findNavController().navigate(R.id.action_MenuFragment_to_AnamnesisFragment)
         }
 
         binding.buttonVaccine.setOnClickListener {
-            findNavController().navigate(R.id.action_MenuFragment_to_VaccineFragment)
+            findNavController().navigate(R.id.action_MenuFragment_to_vaccinesFragment)
+        }
+
+        binding.buttonMedicine.setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_medicineFragment)
         }
     }
 

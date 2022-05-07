@@ -1,38 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuFragment">
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
 
-    <TextView
-        android:id="@+id/textview_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Projeto Caramelo 2"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        <Button
+            android:id="@+id/button_vaccine"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#f9930d"
+            android:foregroundGravity="fill_horizontal"
+            android:text="Vacinas"
+            android:textColor="@color/black"
+            app:cornerRadius="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
 
-    <Button
-        android:id="@+id/button_vaccine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/button_first"
-        app:layout_constraintEnd_toStartOf="@+id/button_first"
-        app:layout_constraintTop_toTopOf="@+id/button_first" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button_anamnase"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#f9930d"
+            android:text="Anamnase"
+            android:textColor="@color/black"
+            app:cornerRadius="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_vaccine"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_vaccine"
+            app:layout_constraintTop_toBottomOf="@+id/button_vaccine" />
+
+        <Button
+            android:id="@+id/button_medicine"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#f9930d"
+            android:text="Medicamentos"
+            android:textColor="@color/black"
+            app:cornerRadius="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_anamnase"
+            app:layout_constraintStart_toStartOf="@+id/button_anamnase"
+            app:layout_constraintTop_toBottomOf="@+id/button_anamnase" />
+
+        <Button
+            android:id="@+id/button_prescription"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#f9930d"
+            android:text="Prescrição nutricional"
+            android:textColor="@color/black"
+            app:cornerRadius="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_medicine"
+            app:layout_constraintStart_toStartOf="@+id/button_medicine"
+            app:layout_constraintTop_toBottomOf="@+id/button_medicine" />
+
+        <Button
+            android:id="@+id/button_news"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#f9930d"
+            android:text="Notícias"
+            android:textColor="@color/black"
+            app:cornerRadius="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_prescription"
+            app:layout_constraintStart_toStartOf="@+id/button_prescription"
+            app:layout_constraintTop_toBottomOf="@+id/button_prescription" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="280dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="17dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_vaccine"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.612" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="123dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/single_doggo"
+                tools:srcCompat="@drawable/single_doggo" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="175dp"
+                android:backgroundTint="@color/white"
+                android:text="Meu pets"
+                android:textColor="@color/black"
+                app:cornerRadius="21dp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
