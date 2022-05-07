@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#f9930d"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AnamnesisFragment">
+
+        <Button
+            android:id="@+id/button_second"
+            android:layout_width="147dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="86dp"
+            android:backgroundTint="#f9930d"
+            android:text="Salvar"
+            app:cornerRadius="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine8"
+            app:layout_constraintVertical_bias="0.452" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:elevation="0.3sp"
+            android:ellipsize="none"
+            android:ems="10"
+            android:hint="Nome do Pet"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:elevation="0.3sp"
+            android:ems="10"
+            android:hint="Nome do tutor"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Queixa principal"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="História"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Frequência Cardíaca"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine2"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Frequência Respiratória"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Mucosas"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="TPC"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Pulso"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine5" />
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine6" />
+
+        <CheckBox
+            android:id="@+id/checkBox10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Não se aplica"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine8" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine3"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Auscultação"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName7"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine4"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Palpação"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine3"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine5"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Oftálmico/Ouvido "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine6"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Neurológico/Ortopédico "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine5"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine5" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine7"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Neurológico/Ortopédico "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine5"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine5" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine8"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Pele e Anexos "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine6"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine6" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038"
+            app:srcCompat="@mipmap/note_launcher_round" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
