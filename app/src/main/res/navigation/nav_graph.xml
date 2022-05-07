@@ -15,8 +15,11 @@
             android:id="@+id/action_MenuFragment_to_AnamnesisFragment"
             app:destination="@id/AnamnesisFragment" />
         <action
-            android:id="@+id/action_MenuFragment_to_VaccineFragment"
-            app:destination="@id/VaccineFragment" />
+            android:id="@+id/action_MenuFragment_to_vaccinesFragment"
+            app:destination="@id/vaccinesFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_medicineFragment"
+            app:destination="@id/medicineFragment" />
     </fragment>
     <fragment
         android:id="@+id/AnamnesisFragment"
@@ -29,8 +32,11 @@
             app:destination="@id/MenuFragment" />
     </fragment>
     <fragment
-        android:id="@+id/VaccineFragment"
+        android:id="@+id/vaccinesFragment"
         android:name="br.com.unicuritiba.projetocaramelo.VaccineFragment"
-        android:label="Vacinas"
-        tools:layout="@layout/fragment_vaccine" />
+        android:label="Vacinas" />
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="br.com.unicuritiba.projetocaramelo.MedicineFragment"
+        android:label="Medicamentos" />
 </navigation>

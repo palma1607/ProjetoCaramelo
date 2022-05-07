@@ -6,15 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import br.com.unicuritiba.projetocaramelo.databinding.FragmentMenuBinding
-import br.com.unicuritiba.projetocaramelo.databinding.FragmentVaccineBinding
+import br.com.unicuritiba.projetocaramelo.databinding.FragmentMedicineBinding
+
+
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class MedicineFragment : Fragment() {
 
-    private var _binding: FragmentVaccineBinding? = null
+    private var _binding: FragmentMedicineBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,7 +26,7 @@ class MedicineFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentVaccineBinding.inflate(inflater, container, false)
+        _binding = FragmentMedicineBinding.inflate(inflater, container, false)
         return binding.root
 
     }
