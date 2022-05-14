@@ -7,7 +7,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_medicine.xml" value="0.14" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.24331376386170905" />
         <entry key="app/src/main/res/layout/fragment_vaccine.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_vaccines.xml" value="0.25" />
