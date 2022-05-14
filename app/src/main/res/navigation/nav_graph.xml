@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_MenuFragment_to_medicineFragment"
             app:destination="@id/medicineFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
     </fragment>
     <fragment
         android:id="@+id/AnamnesisFragment"
@@ -39,4 +42,8 @@
         android:id="@+id/medicineFragment"
         android:name="br.com.unicuritiba.projetocaramelo.MedicineFragment"
         android:label="Medicamentos" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="br.com.unicuritiba.projetocaramelo.InfoFragment"
+        android:label="Infos" />
 </navigation>

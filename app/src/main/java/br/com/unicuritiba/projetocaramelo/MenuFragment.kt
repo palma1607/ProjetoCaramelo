@@ -43,6 +43,10 @@ class MenuFragment : Fragment() {
         binding.buttonMedicine.setOnClickListener {
             findNavController().navigate(R.id.action_MenuFragment_to_medicineFragment)
         }
+
+        binding.buttonNews.setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_infoFragment)
+        }
     }
 
     override fun onDestroyView() {
