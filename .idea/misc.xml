@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.2945638432364096" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14814814814814814" />
         <entry key="app/src/main/res/drawable/account_circle.xml" value="0.1905" />
         <entry key="app/src/main/res/drawable/background_menu_button.xml" value="0.14814814814814814" />
@@ -15,6 +16,7 @@
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.24331376386170905" />
         <entry key="app/src/main/res/layout/fragment_vaccine.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_vaccines.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/info_view.xml" value="0.20742753623188406" />
       </map>
     </option>
   </component>

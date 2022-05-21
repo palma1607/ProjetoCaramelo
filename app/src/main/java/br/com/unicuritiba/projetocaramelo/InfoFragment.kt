@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import br.com.unicuritiba.projetocaramelo.adapter.InfoAdapter
 import br.com.unicuritiba.projetocaramelo.databinding.FragmentInfoBinding
 import br.com.unicuritiba.projetocaramelo.util.FactoryInfo
 
@@ -32,7 +35,11 @@ class InfoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val infos = FactoryInfo.getInfos()
+        val adapter = InfoAdapter(infos)
+        val recycler = view.findViewById<RecyclerView>(R.id.recycler_view_infos)
 
+        recycler.layoutManager = LinearLayoutManager(context)
+        recycler.adapter = adapter
     }
 
     override fun onDestroyView() {
