@@ -67,8 +67,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.008"
-                app:tabIndicatorColor="#f9930d"
-                app:tabTextColor="#FF8400">
+                app:tabIndicatorColor="@color/button_color"
+                app:tabTextColor="@color/button_text_color">
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
