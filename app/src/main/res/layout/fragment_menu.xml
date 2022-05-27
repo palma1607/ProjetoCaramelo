@@ -75,39 +75,51 @@
             android:layout_width="80dp"
             android:layout_height="24dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="48dp"
             android:text="Notícias"
             android:textAlignment="center"
             android:textColor="@color/button_text_color"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/button_news"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/button_news"
-            app:layout_constraintTop_toBottomOf="@+id/button_news" />
+            app:layout_constraintTop_toBottomOf="@+id/button_news"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="80dp"
             android:layout_height="24dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="48dp"
             android:text="Agenda"
             android:textAlignment="center"
             android:textColor="@color/button_text_color"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/button_news2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/button_news2"
-            app:layout_constraintTop_toBottomOf="@+id/button_news2" />
+            app:layout_constraintTop_toBottomOf="@+id/button_news2"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="80dp"
             android:layout_height="32dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="48dp"
             android:text="Prescrição nutricional"
             android:textAlignment="center"
             android:textColor="@color/button_text_color"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/button_prescription"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/button_prescription"
-            app:layout_constraintTop_toBottomOf="@+id/button_prescription" />
+            app:layout_constraintTop_toBottomOf="@+id/button_prescription"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView4"
@@ -162,6 +174,7 @@
             android:layout_height="@dimen/button_menu_size"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:src="@drawable/ic_news"
             android:text="Notícias"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
@@ -169,8 +182,7 @@
             app:layout_constraintEnd_toEndOf="@+id/button_vaccine"
             app:layout_constraintStart_toStartOf="@+id/button_vaccine"
             app:layout_constraintTop_toTopOf="@+id/button_prescription"
-            tools:ignore="SpeakableTextPresentCheck"
-            tools:src="@drawable/ic_news" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/button_news2"

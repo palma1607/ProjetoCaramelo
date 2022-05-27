@@ -23,8 +23,11 @@ class InfoAdapter(info: ArrayList<Info>) : RecyclerView.Adapter<InfoAdapter.Info
 
         val infoElement = infoList[position]
         val textTitle = holder.itemView.findViewById<TextView>(R.id.text_info_title)
-
+        val textContent = holder.itemView.findViewById<TextView>(R.id.text_info_content)
+        val textDate = holder.itemView.findViewById<TextView>(R.id.text_info_date)
         textTitle.text = infoElement.title
+        textContent.text = infoElement.message
+        textDate.text = infoElement.date
 
         // Todo adicionar elementos da mensagem e data, além da customização da celula
 
