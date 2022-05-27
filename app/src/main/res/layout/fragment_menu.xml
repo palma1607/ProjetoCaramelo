@@ -20,7 +20,7 @@
             android:backgroundTint="@color/button_color"
             android:foregroundGravity="fill_horizontal"
             android:foregroundTint="#050505"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_inject"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
             android:layout_height="@dimen/button_menu_size"
             android:layout_marginEnd="24dp"
             android:background="@drawable/background_menu_button"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_desc_2"
             android:text="Anamnase"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
@@ -129,7 +129,7 @@
             android:layout_marginStart="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_pill"
             android:text="Medicamentos"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
@@ -146,6 +146,7 @@
             android:layout_marginTop="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:src="@drawable/ic_menu_food"
             android:text="Prescrição nutricional"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
@@ -168,7 +169,8 @@
             app:layout_constraintEnd_toEndOf="@+id/button_vaccine"
             app:layout_constraintStart_toStartOf="@+id/button_vaccine"
             app:layout_constraintTop_toTopOf="@+id/button_prescription"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:src="@drawable/ic_news" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/button_news2"
@@ -177,6 +179,7 @@
             android:layout_marginTop="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:src="@drawable/ic_calendar"
             android:text="Notícias"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
@@ -203,7 +206,18 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="248dp"
+                    android:layout_height="148dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/single_doggo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
