@@ -9,19 +9,20 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/button_vaccine"
             android:layout_width="@dimen/button_menu_size"
             android:layout_height="@dimen/button_menu_size"
             android:layout_marginTop="32dp"
+            android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
             android:foregroundGravity="fill_horizontal"
             android:foregroundTint="#050505"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_inject"
             android:textColor="@color/black"
-            android:tint="#0B0909"
+            android:tint="@color/button_text_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView"
@@ -33,69 +34,177 @@
             android:layout_height="@dimen/button_menu_size"
             android:layout_marginEnd="24dp"
             android:background="@drawable/background_menu_button"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_desc_2"
             android:text="Anamnase"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
             app:layout_constraintBottom_toBottomOf="@+id/button_vaccine"
             app:layout_constraintEnd_toStartOf="@+id/button_vaccine"
-            app:layout_constraintTop_toTopOf="@+id/button_vaccine" />
+            app:layout_constraintTop_toTopOf="@+id/button_vaccine"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
             android:text="Anamnese"
+            android:textAlignment="center"
             android:textColor="@color/button_text_color"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/button_anamnase"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/button_anamnase"
             app:layout_constraintTop_toBottomOf="@+id/button_anamnase" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Vacinas"
+            android:textAlignment="center"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/button_vaccine"
+            app:layout_constraintStart_toStartOf="@+id/button_vaccine"
+            app:layout_constraintTop_toBottomOf="@+id/button_vaccine" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="48dp"
+            android:text="Notícias"
+            android:textAlignment="center"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_news"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_news"
+            app:layout_constraintTop_toBottomOf="@+id/button_news"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="48dp"
+            android:text="Agenda"
+            android:textAlignment="center"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_news2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_news2"
+            app:layout_constraintTop_toBottomOf="@+id/button_news2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="48dp"
+            android:text="Prescrição nutricional"
+            android:textAlignment="center"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_prescription"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_prescription"
+            app:layout_constraintTop_toBottomOf="@+id/button_prescription"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Vermífugos"
+            android:textAlignment="center"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/button_medicine"
+            app:layout_constraintStart_toStartOf="@+id/button_medicine"
+            app:layout_constraintTop_toBottomOf="@+id/button_medicine" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/button_medicine"
             android:layout_width="@dimen/button_menu_size"
             android:layout_height="@dimen/button_menu_size"
             android:layout_marginStart="24dp"
+            android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_pill"
             android:text="Medicamentos"
             android:textColor="@color/black"
-            android:tint="@color/black"
+            android:tint="@color/button_text_color"
             app:cornerRadius="21dp"
             app:layout_constraintBottom_toBottomOf="@+id/button_vaccine"
             app:layout_constraintStart_toEndOf="@+id/button_vaccine"
-            app:layout_constraintTop_toTopOf="@+id/button_vaccine" />
+            app:layout_constraintTop_toTopOf="@+id/button_vaccine"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/button_prescription"
             android:layout_width="@dimen/button_menu_size"
             android:layout_height="@dimen/button_menu_size"
             android:layout_marginTop="24dp"
+            android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:src="@drawable/ic_menu_food"
             android:text="Prescrição nutricional"
             android:textColor="@color/black"
+            android:tint="@color/button_text_color"
             app:cornerRadius="21dp"
             app:layout_constraintEnd_toEndOf="@+id/button_anamnase"
             app:layout_constraintStart_toStartOf="@+id/button_anamnase"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/button_news"
             android:layout_width="@dimen/button_menu_size"
             android:layout_height="@dimen/button_menu_size"
+            android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:src="@drawable/ic_news"
             android:text="Notícias"
             android:textColor="@color/black"
+            android:tint="@color/button_text_color"
             app:cornerRadius="21dp"
             app:layout_constraintEnd_toEndOf="@+id/button_vaccine"
             app:layout_constraintStart_toStartOf="@+id/button_vaccine"
-            app:layout_constraintTop_toTopOf="@+id/button_prescription" />
+            app:layout_constraintTop_toTopOf="@+id/button_prescription"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_news2"
+            android:layout_width="@dimen/button_menu_size"
+            android:layout_height="@dimen/button_menu_size"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/background_menu_button"
+            android:backgroundTint="@color/button_color"
+            android:src="@drawable/ic_calendar"
+            android:text="Notícias"
+            android:textColor="@color/black"
+            android:tint="@color/button_text_color"
+            app:cornerRadius="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_medicine"
+            app:layout_constraintStart_toStartOf="@+id/button_medicine"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="180dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="24dp"
@@ -109,37 +218,21 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent" >
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="16dp"
-                    android:src="@drawable/single_doggo"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/single_doggo" />
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="160dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="16dp"
-                    android:backgroundTint="@color/white"
-                    android:text="Meu pets"
-                    android:textColor="@color/black"
-                    app:cornerRadius="21dp"
+                    android:layout_width="248dp"
+                    android:layout_height="148dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/single_doggo" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
