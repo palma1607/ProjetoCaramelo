@@ -1,10 +1,31 @@
 package br.com.unicuritiba.projetocaramelo.util
 
 import br.com.unicuritiba.projetocaramelo.model.Info
+import com.google.firebase.firestore.FirebaseFirestore
 
 object FactoryInfo {
 
     fun getInfos(): ArrayList<Info> {
+
+        val fireStore = FirebaseFirestore.getInstance()
+
+        val collection = fireStore.collection("AnamnepetDatabase")
+        val informations = collection.document("informations")
+        val infoElements = informations.get()
+
+        infoElements.addOnSuccessListener {  document ->
+
+            val infoArray =  document.get("infos")
+
+            for (item in (infoArray as ArrayList<*>)){
+
+
+
+
+            }
+        }
+
+
 
         val infos = ArrayList<Info>()
 

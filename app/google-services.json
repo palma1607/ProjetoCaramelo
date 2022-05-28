@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "818435493717",
+    "project_id": "animahub-projetocaramelo",
+    "storage_bucket": "animahub-projetocaramelo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818435493717:android:b01807ae029b768638e9dc",
+        "android_client_info": {
+          "package_name": "br.com.unicuritiba.projetocaramelo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818435493717-619fbqu04uk2vof2o8ln2dmfjistbet0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSbUGYU6Pa_bXtn7vBM2wq4s1y407x05U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818435493717-619fbqu04uk2vof2o8ln2dmfjistbet0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
