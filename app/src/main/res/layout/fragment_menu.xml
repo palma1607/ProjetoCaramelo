@@ -68,11 +68,12 @@
             android:textAlignment="center"
             android:textColor="@color/button_text_color"
             android:textStyle="bold"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/button_news2"
+            app:layout_constraintEnd_toEndOf="@+id/button_schedule"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button_news2"
-            app:layout_constraintTop_toBottomOf="@+id/button_news2"
+            app:layout_constraintStart_toStartOf="@+id/button_schedule"
+            app:layout_constraintTop_toBottomOf="@+id/button_schedule"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -159,7 +160,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/button_news2"
+            android:id="@+id/button_schedule"
             android:layout_width="@dimen/button_menu_size"
             android:layout_height="@dimen/button_menu_size"
             android:layout_marginTop="24dp"
@@ -169,6 +170,7 @@
             android:text="Notícias"
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
+            android:visibility="gone"
             app:cornerRadius="21dp"
             app:layout_constraintEnd_toEndOf="@+id/button_medicine"
             app:layout_constraintStart_toStartOf="@+id/button_medicine"
@@ -196,13 +198,15 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="248dp"
-                    android:layout_height="148dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#040000"
+                    android:backgroundTint="#000000"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/single_doggo" />
+                    app:srcCompat="@drawable/banner" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>

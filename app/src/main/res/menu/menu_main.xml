@@ -4,7 +4,8 @@
     tools:context="br.com.unicuritiba.projetocaramelo.MainActivity">
     <item
         android:id="@+id/action_settings"
+        android:icon="@drawable/single_doggo"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="Perfil"
+        app:showAsAction="always" />
 </menu>

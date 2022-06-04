@@ -34,12 +34,12 @@ class InfoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val infos = FactoryInfo.getInfos()
-        val adapter = InfoAdapter(infos)
         val recycler = view.findViewById<RecyclerView>(R.id.recycler_view_infos)
-
         recycler.layoutManager = LinearLayoutManager(context)
-        recycler.adapter = adapter
+        FactoryInfo.getInfos { infos ->
+            val adapter = InfoAdapter(infos)
+            recycler.adapter = adapter
+        }
     }
 
     override fun onDestroyView() {
