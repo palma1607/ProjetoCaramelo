@@ -8,14 +8,17 @@
         <entry key="app/src/main/res/drawable/account_circle.xml" value="0.1905" />
         <entry key="app/src/main/res/drawable/background_menu_button.xml" value="0.14814814814814814" />
         <entry key="app/src/main/res/drawable/ic_desc.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/ic_desc_2.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/ic_food.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.14814814814814814" />
+        <entry key="app/src/main/res/drawable/ic_med.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/ic_pill.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/ic_report.xml" value="0.2005" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_info.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_medicine.xml" value="0.14" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_medicine.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.24331376386170905" />
         <entry key="app/src/main/res/layout/fragment_vaccine.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_vaccines.xml" value="0.25" />
