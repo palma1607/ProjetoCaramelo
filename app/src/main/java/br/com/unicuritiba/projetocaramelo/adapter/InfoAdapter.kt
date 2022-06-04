@@ -29,9 +29,6 @@ class InfoAdapter(info: ArrayList<Info>) : RecyclerView.Adapter<InfoAdapter.Info
         textContent.text = infoElement.message
         textDate.text = infoElement.date
 
-        // Todo adicionar elementos da mensagem e data, além da customização da celula
-
-
     }
 
     override fun getItemCount(): Int {
