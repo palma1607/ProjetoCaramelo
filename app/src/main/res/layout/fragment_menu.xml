@@ -28,35 +28,6 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/button_anamnase"
-            android:layout_width="@dimen/button_menu_size"
-            android:layout_height="@dimen/button_menu_size"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/background_menu_button"
-            android:src="@drawable/ic_desc_2"
-            android:text="Anamnase"
-            android:textColor="@color/black"
-            android:tint="@color/button_text_color"
-            app:layout_constraintBottom_toBottomOf="@+id/button_vaccine"
-            app:layout_constraintEnd_toStartOf="@+id/button_vaccine"
-            app:layout_constraintTop_toTopOf="@+id/button_vaccine"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="80dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="8dp"
-            android:text="Anamnese"
-            android:textAlignment="center"
-            android:textColor="@color/button_text_color"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/button_anamnase"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button_anamnase"
-            app:layout_constraintTop_toBottomOf="@+id/button_anamnase" />
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="80dp"
@@ -155,7 +126,7 @@
             android:id="@+id/button_prescription"
             android:layout_width="@dimen/button_menu_size"
             android:layout_height="@dimen/button_menu_size"
-            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
             android:src="@drawable/ic_menu_food"
@@ -163,15 +134,17 @@
             android:textColor="@color/black"
             android:tint="@color/button_text_color"
             app:cornerRadius="21dp"
-            app:layout_constraintEnd_toEndOf="@+id/button_anamnase"
-            app:layout_constraintStart_toStartOf="@+id/button_anamnase"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/button_vaccine"
+            app:layout_constraintEnd_toStartOf="@+id/button_vaccine"
+            app:layout_constraintTop_toTopOf="@+id/button_vaccine"
+            app:layout_constraintVertical_bias="0.0"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/button_news"
             android:layout_width="@dimen/button_menu_size"
             android:layout_height="@dimen/button_menu_size"
+            android:layout_marginTop="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
             android:src="@drawable/ic_news"
@@ -180,8 +153,9 @@
             android:tint="@color/button_text_color"
             app:cornerRadius="21dp"
             app:layout_constraintEnd_toEndOf="@+id/button_vaccine"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/button_vaccine"
-            app:layout_constraintTop_toTopOf="@+id/button_prescription"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatImageButton

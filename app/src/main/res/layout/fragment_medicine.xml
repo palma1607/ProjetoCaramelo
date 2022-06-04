@@ -15,105 +15,163 @@
         android:layout_height="wrap_content"
         tools:context=".MedicineFragment">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.467"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.101"
-            app:srcCompat="@mipmap/medicine_launcher_round" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName8"
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="80dp"
-            android:ems="10"
-            android:hint="Nome do medicamento"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName9"
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="32dp"
-            android:ems="10"
-            android:hint="Próximo medicamento"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/editTextDate"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextDate"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
-
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="32dp"
-            android:ems="10"
-            android:hint="Data "
-            android:inputType="date"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
-
-        <CheckBox
-            android:id="@+id/checkBox11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Não se aplica"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName9"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName9"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
-
         <Button
             android:id="@+id/button_saveMed"
             android:layout_width="140dp"
             android:layout_height="60dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginBottom="80dp"
-            android:backgroundTint="#f9930d"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="56dp"
+            android:backgroundTint="@color/button_text_color"
             android:text="Salvar"
-            app:cornerRadius="21dp"
+            app:cornerRadius="28dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.479"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate2"
-            app:layout_constraintVertical_bias="0.983" />
+            app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
 
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="80dp"
-            android:ems="10"
-            android:hint="Data próximo medicamento"
-            android:inputType="date"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName9"
-            app:layout_constraintHorizontal_bias="0.47"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName9"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="32dp"
+            app:cardBackgroundColor="@color/button_color"
+            app:cardCornerRadius="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="152dp"
+                    android:layout_height="152dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_med" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@color/button_color"
+            app:hintTextColor="#E135FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3"
+            app:startIconDrawable="@drawable/ic_med_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do medicamento" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:boxStrokeColor="@color/button_color"
+            app:hintTextColor="#E135FF"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:startIconDrawable="@drawable/ic_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data " />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:boxStrokeColor="@color/button_color"
+            app:hintTextColor="#E135FF"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+            app:startIconDrawable="@drawable/ic_med_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Próximo medicamento"
+                android:textColor="@color/button_text_color"
+                android:textColorLink="@color/button_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/button_color"
+            android:text="Não se aplica"
+            android:textColorHighlight="@color/button_text_color"
+            android:textColorHint="@color/button_text_color"
+            android:textColorLink="@color/button_text_color"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+            app:layout_constraintHorizontal_bias="0.008"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="1dp"
+            app:boxStrokeColor="@color/button_color"
+            app:hintTextColor="#E135FF"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox12"
+            app:startIconDrawable="@drawable/ic_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data do próximo medicamento"
+                android:textColor="@color/button_text_color"
+                android:textColorLink="@color/button_color" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
             android:id="@+id/checkBox13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/button_color"
             android:text="Não se aplica"
-            app:layout_constraintEnd_toEndOf="@+id/editTextDate2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextDate2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+            android:textColorHighlight="@color/button_text_color"
+            android:textColorHint="@color/button_text_color"
+            android:textColorLink="@color/button_text_color"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+            app:layout_constraintHorizontal_bias="0.012"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
