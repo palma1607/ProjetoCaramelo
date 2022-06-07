@@ -52,5 +52,5 @@
     <fragment
         android:id="@+id/prescriptionFragment"
         android:name="br.com.unicuritiba.projetocaramelo.PrescriptionFragment"
-        android:label="PrescriptionFragment" />
+        android:label="Prescrição nutricional" />
 </navigation>
