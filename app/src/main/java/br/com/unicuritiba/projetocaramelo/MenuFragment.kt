@@ -36,6 +36,10 @@ class MenuFragment : Fragment() {
             findNavController().navigate(R.id.action_MenuFragment_to_AnamnesisFragment)
         }*/
 
+        binding.buttonPrescription.setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_prescriptionFragment)
+        }
+
         binding.buttonVaccine.setOnClickListener {
             findNavController().navigate(R.id.action_MenuFragment_to_vaccinesFragment)
         }
