@@ -51,6 +51,10 @@ class MenuFragment : Fragment() {
         binding.buttonNews.setOnClickListener {
             findNavController().navigate(R.id.action_MenuFragment_to_infoFragment)
         }
+
+        binding.buttonExam.setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_examFragment)
+        }
     }
 
     override fun onDestroyView() {

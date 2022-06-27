@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_MenuFragment_to_prescriptionFragment"
             app:destination="@id/prescriptionFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_examFragment"
+            app:destination="@id/examFragment" />
     </fragment>
     <fragment
         android:id="@+id/AnamnesisFragment"
@@ -53,4 +56,8 @@
         android:id="@+id/prescriptionFragment"
         android:name="br.com.unicuritiba.projetocaramelo.PrescriptionFragment"
         android:label="Prescrição nutricional" />
+    <fragment
+        android:id="@+id/examFragment"
+        android:name="br.com.unicuritiba.projetocaramelo.ExamFragment"
+        android:label="Exames " />
 </navigation>

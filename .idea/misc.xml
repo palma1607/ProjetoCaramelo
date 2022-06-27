@@ -20,10 +20,11 @@
         <entry key="app/src/main/res/drawable/ic_report.xml" value="0.2005" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/exam_view.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_info.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/exam_view.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_exam.xml" value="0.19427083333333334" />
+        <entry key="app/src/main/res/layout/fragment_info.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_medicine.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_prescription.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.24331376386170905" />
         <entry key="app/src/main/res/layout/fragment_vaccine.xml" value="0.22" />
