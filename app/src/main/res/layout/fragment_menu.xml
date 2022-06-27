@@ -18,6 +18,7 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:elevation="4sp"
             android:foregroundGravity="fill_horizontal"
             android:foregroundTint="#050505"
             android:src="@drawable/ic_inject"
@@ -59,6 +60,20 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Exames"
+            android:textAlignment="center"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/button_exam"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_exam"
+            app:layout_constraintTop_toBottomOf="@+id/button_exam" />
+
+        <TextView
             android:id="@+id/textView7"
             android:layout_width="80dp"
             android:layout_height="24dp"
@@ -95,10 +110,10 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="80dp"
+            android:layout_width="104dp"
             android:layout_height="24dp"
             android:layout_marginTop="8dp"
-            android:text="Vermífugos"
+            android:text="Medicamentos"
             android:textAlignment="center"
             android:textColor="@color/button_text_color"
             android:textStyle="bold"
@@ -113,6 +128,8 @@
             android:layout_marginStart="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:elevation="4sp"
+            android:fadingEdge="horizontal"
             android:src="@drawable/ic_pill"
             android:text="Medicamentos"
             android:textColor="@color/black"
@@ -130,6 +147,7 @@
             android:layout_marginEnd="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:elevation="4sp"
             android:src="@drawable/ic_menu_food"
             android:text="Prescrição nutricional"
             android:textColor="@color/black"
@@ -148,6 +166,7 @@
             android:layout_marginTop="24dp"
             android:background="@drawable/background_menu_button"
             android:backgroundTint="@color/button_color"
+            android:elevation="4sp"
             android:src="@drawable/ic_news"
             android:text="Notícias"
             android:textColor="@color/black"
@@ -157,6 +176,25 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/button_vaccine"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_exam"
+            android:layout_width="@dimen/button_menu_size"
+            android:layout_height="@dimen/button_menu_size"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_menu_button"
+            android:backgroundTint="@color/button_color"
+            android:elevation="4sp"
+            android:src="@drawable/ic_exam"
+            android:text="Notícias"
+            android:textColor="@color/black"
+            android:tint="@color/button_text_color"
+            app:cornerRadius="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_prescription"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_prescription"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatImageButton
@@ -194,7 +232,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView"
